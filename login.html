@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Proyeto PAPW 2">
+    <meta name="author" content="Ivón Olivares / Vanessa Oviedo">
+
+	<link rel="icon" href="img/logo.png">
+	<title>Between Books</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+</head>
+		
+		<body background="libros.jpg">
+		
+		
+		
+		<a href="#popup" class="popup-link"><h3>Iniciar sesión</h3></a>
+		
+		<div class="modal-wrapper" id="popup" >
+			<div class="popup-contenedor" style="min-width: 340px; min-height: 50px;" class="col-md-9">
+			
+				<center>
+				<img src="logo1.png" style="min-width: 150px; min-height: 10px;"
+				width=60% height=120% alt="Imagen no disponible">
+				</center>
+				
+				<h2 class="textos" align="center">Iniciar sesión</h2>
+				<blockquote class="textos" align="center"> ¡Lee, escribe y comparte reseñas!</blockquote>
+			   
+			   <blockquote align="center">
+			   
+				<div>
+					<i class="glyphicon glyphicon-user"></i>
+					<input class="inputs" type="text" placeholder="Usuario" name="usuario" required/>
+				</div>
+				
+				<div>
+					<i class="glyphicon glyphicon-lock"></i>
+					<input class="inputs" type="password" placeholder="Contraseña" name="contrasena" required/>
+				</div>
+				
+				<br>
+				<input class="submit" id="submit" type="submit" name="ingresar" value="INGRESAR"/>
+				</blockquote>
+			
+			   <a class="popup-cerrar" href="#"><i class="glyphicon glyphicon-remove"></i></a>
+			</div>
+		</div>
+
+
+
+</body>
+</html>
+
+<style>
+#popup {
+   visibility: hidden;
+   opacity: 0;
+   margin-top: -300px;
+}
+ 
+#popup:target {
+   visibility:visible;
+   opacity: 1;
+   background-color: rgba(0,0,0,0.8);
+   position: fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   margin:0;
+   z-index: 999;
+   -webkit-transition:all 1s;
+   -moz-transition:all 1s;
+   transition:all 1s;
+}
+.popup-contenedor {
+   position: relative;
+   margin:7% auto;
+   padding:30px 50px;
+   background-color: #fafafa;
+   color:#333;
+   border-radius: 3px;
+   width:50%;
+   min-width:400px;
+}
+a.popup-cerrar {
+   position: absolute;
+   top:3px;
+   right:3px;
+   background-color: #333;
+   padding:7px 10px;
+   font-size: 20px;
+   text-decoration: none;
+   line-height: 1;
+   color:#fff;
+}
+
+.textos{
+font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+input.inputs {
+    padding: 5px 9px;
+	
+	position: relative;
+	margin: 2% auto 0 0;
+   
+    height: 30px;
+    width: 80%;
+    border: 1px solid #A4C3CA;
+    font: normal 16px 'trebuchet MS', arial, helvetica;
+    background: #F1F1F1;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+}
+
+
+
+.submit{
+	float: relative;
+	margin: 15px;
+	margin-right: auto;
+	
+    background-color: #800000;
+    background-image: linear-gradient(#760000, #800000);
+    //border-radius: 50px 50px 50px 50px;  
+    border-radius: 5px 5px 5px 5px;    	
+    border-width: 1px;
+    border-style: solid;
+    border-color: #960000 #800000 #660000;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;
+   
+	height: 30px;
+    width: 50%;
+	/*height: 25px;
+    width: 95px;*/
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: white;    
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+
+.submit:hover {       
+    background-color: #b30000;
+    background-image: linear-gradient(#cc0000, #b30000);
+}   
+.submit:active {       
+    background: #b30000;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+.submit::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+
+
+
+
+
+
+</style>
